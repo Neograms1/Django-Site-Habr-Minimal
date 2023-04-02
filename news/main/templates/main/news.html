@@ -1,0 +1,18 @@
+{% extends 'main/base.html' %}
+
+{% block ok %}
+
+
+{{ tipa.title }}
+{% endblock %}
+
+
+{% block title %}
+<div class="p-3 mb-2 bg-dark text-white">
+	<h1>{{ tipa.title }}</h1>
+	<p>{{tipa.full_text}}</p>
+</div>
+
+
+{% endblock %}
+

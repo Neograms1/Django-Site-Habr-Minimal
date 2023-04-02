@@ -1,0 +1,25 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+Hello
+{% endblock %}
+
+
+{% block content %}
+Almaz
+{% endblock %}
+
+{% extends 'main/base.html' %}
+
+{% block title %}
+{% for el in data %}
+{{ el.title }}
+{% endfor %}
+{% endblock %}
+
+
+{% block content %}
+{% for el in data %}
+{{el.textpad}}
+{% endfor %}
+{% endblock %}
